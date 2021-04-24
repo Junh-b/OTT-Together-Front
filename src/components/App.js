@@ -6,6 +6,7 @@ import LandingPage from "./views/LandingPage/LandingPage";
 import Footer from "./views/Footer/Footer";
 import LoginPage from "./views/LoginPage/LoginPage";
 import RegisterPage from "./views/RegisterPage/RegisterPage";
+import MainPage from "./views/MainPage/MainPage";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
                 <Switch>
                     <Route path="/contents" component={ContentsPage}></Route>
                     <Route exact path="/" component={LandingPage}></Route>
+                    <Route exact path="/main" component={MainPage}></Route>
                     <Route exact path="/login" component={LoginPage}></Route>
                     <Route exact path="/register" component={RegisterPage}></Route>
                 </Switch>
